@@ -1,4 +1,4 @@
-use rust_ddd_macros::Entity;
+use ddd_macros::Entity;
 
 mod entityのテスト {
     use super::*;

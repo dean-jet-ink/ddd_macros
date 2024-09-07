@@ -6,7 +6,7 @@ use entity::expand::expand_entity;
 use proc_macro::TokenStream;
 use value_object::expand::expand_value_object;
 
-#[proc_macro_derive(ValueObject)]
+#[proc_macro_derive(ValueObject, attributes(Id))]
 pub fn value_object_derive(input: proc_macro::TokenStream) -> TokenStream {
     let input = syn::parse_macro_input!(input as syn::DeriveInput);
 
